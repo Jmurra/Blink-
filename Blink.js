@@ -1,6 +1,6 @@
 
 (function(blink) {
-   die_and_restart = function() {
+   gameover = function() {
 
   confirm(["You are stranded in the woods, you see a red blinking light off",
   "in the distance you want to pursue it but their are creatures of the unknown out there",
@@ -65,8 +65,7 @@
  } else if ("e") {
     console.log("Lorem ipsum you've escaped");
 } else {
-  .console.log("Try using the 's' key to shutdown the robot or try using the 'e' key to escape");
+  console.log("Try using the 's' key to shutdown the robot or try using the 'e' key to escape");
 }
-   die_and_restart(console.log"Game Over!");
+   gameover (console.log"Game Over!");
 })(blink);
-(function(window){
