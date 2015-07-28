@@ -1,6 +1,10 @@
 
 (function(blink) {
-  var gameover = function(){
+  var playGame = function(){
+    wantToPlay = true;
+    while(wantToPlay) {
+      wantToplay = playGame();
+    }
 
   confirm(["You are stranded in the woods, you see a red blinking light off",
   "in the distance you want to pursue it but their are creatures of the unknown out there",
@@ -52,7 +56,8 @@
     console.log(["You try and pry the metal hand off your ankle.",
     "but you upsest the beast to only discover its a robot the robot then takes you",
     "and chews you into tiny pieces only to consumed by his metal gullet"].join('\n'));
-    return gameover()
+    console.log(" Game over ");
+    return false;
   } else {
      console.log("Try using the 'f' arrow key to fight the robot or you can run by using the 'r' arrow key");
    }
@@ -67,5 +72,5 @@
 } else {
   console.log("Try using the 's' key to shutdown the robot or try using the 'e' key to escape");
 }
-   gameover = (console.log"Game Over!");
+
 })(blink);
